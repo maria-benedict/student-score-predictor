@@ -33,5 +33,7 @@ print("Random Forest Results")
 print("MAE:", mean_absolute_error(y_test, rf_preds))
 print("R2 Score:", r2_score(y_test, rf_preds))
 
-# Save the better model (Random Forest)
-pickle.dump(rf, open("student_score_model.pkl", "wb"))
+
+pickle.dump(lr, open('student_score_model.pkl', 'wb'))
+
+print("Model saved as student_score_model.pkl")
